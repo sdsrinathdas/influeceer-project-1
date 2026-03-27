@@ -11,11 +11,176 @@
     display: flex;
 }
 
+.font-52{
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.font-17{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.font-24{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.btn-primary{
+    padding: 0.7rem 0.9rem;
+    background-color: #e649d5;
+    border: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+}
+
+
+
 /* head style start */
 
 .navbar{
     max-width: 1100px;
+    margin: 0px auto 2rem;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.navbar-2{
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5.2rem;
+}
+
+.header-menu{
+    justify-content: space-between;
+    align-items: center;
+    gap: 5.2rem;
+}
+
+.header-menu .header-menu-list{
+    list-style-type: none;
+}
+
+.header-menu .header-links{
+    text-decoration: none;
+    color: black;
+}
+
+.journey-section-container{
+    max-width: 1100px;
     margin: 0px auto;
     justify-content: space-between;
     align-items: center;
+}
+
+.journey-container{
+    width: 60%;
+    text-align: justify;
+}
+
+.journey-title{
+    margin: 0px auto;
+}
+
+.journey-container div{
+    text-align: start;
+}
+
+.journey-link a{
+    text-decoration: none;
+    margin-left: 0.2rem;
+    color: white;
+}
+
+.journey-link i{
+    color: white;
+}
+
+.journey-camera{
+    width: 40%;
+    
+    position: relative;
+}
+.journey-camera .journey-circle{
+    width: 100%;
+}
+
+.journey-camera .camera{
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.company-img{
+    width: 100%;
+    max-width: 900px;
+    margin: 0px auto;
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+@media screen and (max-width: 576px) {
+    .navbar{
+        display: none;
+    }
+
+    .navbar-2{
+        display: flex;
+    }
+
+    .font-24{
+        font-size: 1.7rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .font-17{
+        font-size: 1.5rem;
+    }
+
+    .journey-section-container{
+        flex-direction: column-reverse;
+    }
+
+    .journey-camera{
+        width: 60%;
+    }
+
+    .journey-container{
+        width: 100%;
+        text-align: center;
+    }
+
+    .journey-title{
+        margin: 0px auto;
+        text-align: center;
+    }
+
+    .journey-container div{
+    text-align: center;
+    }
+
+    .company-img{
+        flex-wrap: wrap;
+    }
+
+    .company-img div{
+        flex: 1 1 80px;
+        max-width: 100px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .company-img img{
+        width: 100%;
+    }
+
+
 }
